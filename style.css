@@ -1,0 +1,343 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  transition: all .2s linear; 
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden; 
+}
+
+#home{
+  background-color: black;
+  color: white;
+}
+.head{
+ position:fixed;
+ z-index: 1000;
+ box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+ background-color: white;
+ margin-bottom: 250px;
+}
+
+.active-head{
+ background-color: #013CFA;
+}
+
+.head1{
+  text-align: center;
+}
+
+.nav{
+  padding: 30px 0;
+  display: flex;
+  justify-content: end;
+}
+
+.nav a{
+  padding:10px 20px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+ .nav a:hover{
+    color:#fff;
+    background-color:black;
+  }
+
+.icon i{
+  padding:12px 20px;
+  display: none;
+  /* padding: 30px 0; */
+}
+
+/* .nav i:hover{
+  background-color: black;
+  color: white;
+  border-radius: 35px;
+} */
+
+.image{
+  padding-top: 20px;
+  background-image: url("./sc2.5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.image-active{
+  color: black;
+}
+
+.backimg{
+  margin-top: 200px;
+  padding-bottom:180px;
+}
+
+.image h1{
+  font-size: 70px;
+
+}
+
+.image1,.image2{
+  padding-bottom:20px ;
+}
+
+.btn1{
+  padding: 10px 25px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white; 
+  font-weight: 600;
+  text-transform:uppercase;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.btn1:hover{
+  background-color: black; 
+ border: 0;
+}
+
+.service{
+  margin: 70px 0px;
+  color: grey;
+}
+.service1 h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  color: black;
+  font-weight: 100;
+}
+
+.service1 span{
+  font-weight: bold;
+  color: black;
+}
+
+.progress{
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.skills{
+  color: grey;
+  margin: 70px 0px;
+}
+.skill-head h2{
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 45px;
+  color: black;
+}
+
+
+.info h5{
+  text-transform: uppercase;
+  color:white;
+  font-weight: 500;
+  text-align:left;
+}
+
+.info-list{
+ margin-left: -30px;
+ margin-top: 20px;
+}
+
+.home-last ul li{
+  width: 100%;
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  list-style:none;
+  text-align: left;
+}
+
+.home-last ul li a:hover{
+  text-decoration: underline;
+  background-color: #2F3840;
+  font-weight: bolder;
+}
+
+.home-last{
+  background-color: #2F3840;
+}
+
+.logo-last{
+   text-align: left;
+   color: white;
+   /* padding-top:-90px; */
+   margin-left: 35px;
+   margin-right: 35px;
+}
+
+.credit{
+  text-align: center;
+  background-color: #2C4256;
+  padding: 20px 0;
+  color: white;
+}
+
+.credit span{
+  font-weight: bolder ;
+  color: #255FFD;
+}
+
+
+.loader-container{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#F5F7F6;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+ }
+ 
+ .loader-container img{
+  width: 35rem;
+ }
+ 
+ .loader-container.active{
+   top:110%;
+   opacity: 0;
+ }
+
+
+
+/* For Tablet Screens */
+/* 
+@media (max-width:991px) 
+{ 
+  
+} */
+
+/* For small Screens */
+
+@media (max-width:768px){
+   
+  #home{
+    background-color:black;
+  }
+  #home:hover{
+    color: black; 
+   background-color: white;
+  }
+
+  .head1{
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .icon i{
+  font-size: 25px;
+   /* line-height:30px; */
+    /* padding-bottom: 0;
+    padding-top: 0; */
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left:222px;
+  }
+
+  .head{
+    margin-bottom: 0px;
+   }
+
+   
+   .nav{
+     padding: 0px ;
+     /* display: flex; */
+     /* justify-content: end; */
+   }
+
+   .image{
+    padding-top: 120px;
+  }
+  
+  .backimg{
+    margin-top: 20px;
+    padding-bottom:180px;
+  }
+
+  .image1 h1{
+    font-size:55px;
+  }
+  
+   #menu-bars{
+      display: inline-block;
+        background-color: black;
+        color: white;
+        border-radius: 35px;
+  }
+  /* .icon {
+    display: flex;
+    justify-content: end;
+  } */
+
+  #menu-bars:hover{
+    transform: rotate(360deg);
+  }
+
+
+  .nav{
+     position: absolute;
+     top:100%;
+     left:0;
+     right:0;
+     background-color: #fff;
+     border-top: .1rem solid rgba(0,0,0,.2);
+     border-bottom: .1rem solid rgba(0,0,0,.2);
+     padding: 1rem;
+     /* clip-path decide krta h ki konsa part shown hoga iss case me hide krdegA navbar ko */
+     clip-path: polygon(0 0,100% 0,100% 0,0 0); 
+  }
+
+  .nav.active{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%); 
+   }
+
+   .nav a{
+    /* display:block; */
+    width: 100%;
+    padding: 10px 0;
+    margin:10px 0;
+    margin-left: 9px;
+    font-size: 15px;
+    color: white;
+    background-color:black;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+.nav a:hover{
+  color: black;
+  background-color: white;
+}
+
+.logo-last{
+  color: white;
+  margin-left:0;
+   margin-right:0;
+   text-align: center;
+}
+
+}
